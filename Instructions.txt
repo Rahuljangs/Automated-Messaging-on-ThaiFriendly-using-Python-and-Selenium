@@ -1,0 +1,53 @@
+
+
+**Block 1: Setting Up Browser Session and Message**
+
+This block of code initializes a Chrome browser session using Selenium WebDriver. It loads the ThaiFriendly website and defines the message that will be sent to profiles.
+
+**Instructions:**
+1. Run this code block to set up the browser session and define the message.
+2. Ensure that the Chrome browser is installed and the WebDriver for Chrome is compatible with your browser version.
+3. Replace the Chrome profile directory path with your own directory path where your Chrome user profile data is stored.
+
+**Block 2: Scraping Profile Links**
+
+In this block, the script iterates through the search results pages on ThaiFriendly, scrapes the profile links, and stores them in a list.
+
+**Instructions:**
+1. Execute this code block to scrape profile links from the ThaiFriendly website.
+2. Ensure that you are logged in to your ThaiFriendly account before running this block to access profile links.
+
+**Block 3: Saving Profile Links to CSV**
+
+This block saves all scraped profile links to a CSV file for future reference.
+
+**Instructions:**
+1. Run this block of code to save all scraped profile links to a CSV file.
+2. The CSV file will be named 'All_profiles.csv' and will be created in the current directory.
+
+**Block 4: Loading Existing Profiles from CSV**
+
+The script loads existing profiles from a CSV file named 'Existing_profiles.csv' to avoid sending duplicate messages to the same profiles.
+
+**Instructions:**
+1. Execute this code block to load existing profiles from the CSV file.
+2. Make sure you have the 'Existing_profiles.csv' file in the same directory as your Python script.
+
+**Block 5: Sending Messages and Updating Records**
+
+This block sends messages to profiles whose links were scraped earlier. It also updates the list of passed profiles and checks if the profile's last activity was more than a month ago.
+
+**Instructions:**
+1. Run this code block to send messages to profiles and update records.
+2. Ensure that the Chrome browser remains open and active while the script is running.
+3. The script will open each profile link, send a message, and update the record accordingly.
+
+**Block 6: Saving Updated Profile Records**
+
+After sending messages, this block updates the profile records with newly sent messages and saves them to the CSV file.
+
+**Instructions:**
+1. Execute this code block to update profile records and save them to a CSV file.
+2. The CSV file 'Existing_profiles.csv' will be overwritten with the updated profile records.
+
+Follow these instructions sequentially to automate messaging on ThaiFriendly. Ensure that you have the necessary prerequisites and follow the steps carefully for successful execution of the script.
